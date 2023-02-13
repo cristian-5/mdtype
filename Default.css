@@ -1,0 +1,123 @@
+
+@import url('CMU/Serif/cmun-serif.css');
+@import url('CMU/Typewriter/cmun-typewriter.css');
+
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Computer Modern Serif", "Times New Roman", serif;
+	color: black;
+}
+
+p {
+	font-size: 12pt;
+	font-weight: normal;
+	line-height: normal;
+	text-align: justify;
+	margin: 12pt 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-align: left;
+	font-weight: bold;
+}
+
+h1 { font-size: 24pt; margin: 24pt 0; }
+h2 { font-size: 22pt; margin: 22pt 0; }
+h3 { font-size: 20pt; margin: 20pt 0; }
+h4 { font-size: 18pt; margin: 18pt 0; }
+h5 { font-size: 16pt; margin: 16pt 0; }
+h6 { font-size: 14pt; margin: 14pt 0; }
+
+a {
+	color: blue;
+	text-decoration: underline;
+}
+
+a.reference {
+	color: black;
+	text-decoration: none;
+	font-family: "Computer Modern Typewriter", "Courier New", monospace;
+}
+
+hr {
+	border: none;
+	border-top: 1pt solid gray;
+	margin: 12pt 0;
+}
+
+hr.double {
+	border-top: 2pt double gray;
+}
+
+pre, code {
+	font-family: "Computer Modern Typewriter", "Courier New", monospace;
+	font-size: 10pt;
+}
+
+blockquote, q, i { font-style: italic; }
+
+.caps, .smallcaps { font-variant: small-caps; }
+
+ul.contains-task-list {
+	list-style-type: none;
+	padding: 0 10pt;
+}
+input[type='checkbox']:disabled { color: black; }
+input[type='checkbox'] { appearance: none; }
+input[type='checkbox']::before {
+	content: "\2610";
+	font-size: 15pt;
+	line-height: 12pt;
+}
+input[type='checkbox']:checked::before { content: "\2611";}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: auto;
+	max-width: 100%;
+	border-top: 2pt double black;
+	border-bottom: 2pt double black;
+	border-left: 1pt solid black;
+	border-right: 1pt solid black;
+	overflow-x: auto;
+	counter-increment: caption;
+}
+table tr > th[scope='col'] {
+	border-bottom: 1pt solid black;
+}
+table tr > th[scope='row'] {
+	border-right: 1pt solid black;
+}
+table > tbody > tr:first-child > td,
+table > tbody > tr:first-child > th {
+	border-top: 2pt double black;
+}
+table > tbody > tr:last-child > td,
+table > tbody > tr:last-child > th {
+	border-bottom: 1pt solid black;
+}
+
+th, td {
+	padding: 0.5rem;
+	line-height: 1.1;
+	border: 1pt solid black;
+}
+
+.katex { font-size: 12pt; } /* inline math size */
+
+@media screen {
+	html {
+		background-color: darkgray;
+	}
+	body {
+		background-color: white;
+		width: 210mm;
+		margin: 50pt auto;
+		box-shadow: 0 0 20px -10px black;
+	}
+}
