@@ -5,24 +5,15 @@ This software is a markdown typesetting system based on *Deno*.\
 It will convert your markdown text into `.html` that you can
 then open in Google Chrome and print or save as `.pdf`.\
 It can be used to write books, articles and publications.
+This software is based on the
+[markdown-it](https://github.com/markdown-it/markdown-it)
+library.
 
 ## Main Goals
 
 The main goal to this project is to overcome the limitations of
 the markdown,and completely replace **TeX** with an easier to
 use and more powerful system.
-
-## Features
-
-``` md
-![pagebreak]
-![index]
-![author]
-![date]
-![title]
-```
-
-```
 
 ## How does it work?
 
