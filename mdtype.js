@@ -9,7 +9,7 @@ import tasklists from "https://cdn.jsdelivr.net/npm/markdown-it-task-lists@2.1.1
 import defslists from "https://cdn.jsdelivr.net/npm/markdown-it-deflist@2.1.0/+esm";
 import katexmath from "https://cdn.jsdelivr.net/npm/markdown-it-katex@2.0.3/+esm";
 import bracketed from "https://cdn.jsdelivr.net/npm/markdown-it-bracketed-spans@1.0.1/+esm";
-import smallcaps from "https://cdn.jsdelivr.net/npm/markdown-it-attrs@4.1.6/+esm";
+import attribute from "https://cdn.jsdelivr.net/npm/markdown-it-attrs@4.1.6/+esm";
 
 import underline from "./extensions/underline.js";
 
@@ -20,7 +20,7 @@ const md = new MarkdownIt({
 })
 .use(subscript).use(supscript).use(footnotes)
 .use(tasklists).use(defslists).use(katexmath)
-.use(underline).use(bracketed).use(smallcaps);
+.use(underline).use(bracketed).use(attribute);
 
 const args = parse(Deno.args, {
 	"--": false, boolean: [ "help", "version" ],
